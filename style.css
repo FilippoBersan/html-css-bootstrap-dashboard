@@ -2,3 +2,61 @@
   font-family: 'Montserrat', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
+
+header {
+  height: 4.375rem;
+  position: fixed;
+  background-color: #f8f9fa;
+  width: 100%;
+  z-index: 2222222;
+}
+
+.row_header {
+  background-color: aqua;
+  height: 80%;
+  width: 100%;
+  z-index: 11111;
+}
+
+#input_search_color {
+  background-color: #e5e5e5;
+}
+
+.content {
+  background-color: azure;
+}
+
+main {
+  display: flex;
+
+  width: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #051e34;
+  height: 100vh;
+
+  justify-content: space-between;
+}
+
+.content_sidebar_1 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+
+  text-align: center;
+  justify-content: end;
+}
+
+.btn_sidebar {
+  color: white;
+}
+
+.content_sidebar_2 {
+  border: 1px solid red;
+
+  text-align: center;
+}
