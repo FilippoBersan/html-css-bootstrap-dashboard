@@ -41,20 +41,22 @@
         <a class="navbar-brand d-md-none" href="#">
           <img
             src="img/mobile-logo.png"
-            alt="Bootstrap"
-            width="60"
-            height="56"
+            alt="Logo boolean piccolo"
+            width="50"
+            height="52"
           />
         </a>
         <!-- logo piccolo -->
         <!-- logo grande -->
-        <a class="navbar-brand d-none d-md-block" href="#">
-          <img src="img/logo.svg" alt="Bootstrap" width="100" height="56" />
+        <a class="navbar-brand d-none d-md-block ms-3" href="#">
+          <img src="img/logo.svg" alt="Logo Grande" width="130" height="56" />
         </a>
         <!-- logo grande -->
         <!-- search bar -->
         <div class="input-group flex-nowrap ms-3">
-          <span class="input-group-text" id="addon-wrapping"
+          <span
+            class="input-group-text border-0 input_search_color"
+            id="addon-wrapping "
             ><i class="fa-solid fa-magnifying-glass"></i
           ></span>
           <input
@@ -76,7 +78,7 @@
             <i class="fa-solid fa-ellipsis-vertical ms-3"></i>
           </div>
 
-          <i class="fa-solid fa-bell ms-3 me-3"></i>
+          <i class="fa-solid fa-bell ms-3 me-3 text-warning"></i>
         </div>
         <!-- functio bar -->
       </div>
@@ -86,24 +88,70 @@
       <nav class="sidebar">
         <div class="content_sidebar_1">
           <button type="button" class="btn border-0 btn_sidebar">
-            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-house"></i
+            ><span class="ms-3 d-none d-lg-inline">Home</span>
           </button>
           <button type="button" class="btn border-0 btn_sidebar">
             <i class="fa-solid fa-chart-simple"></i>
+            <span class="ms-3 d-none d-lg-inline">Stats</span>
           </button>
           <button type="button" class="btn border-0 btn_sidebar">
             <i class="fa-solid fa-signal"></i>
+            <span class="ms-3 d-none d-lg-inline">Signal</span>
           </button>
         </div>
 
         <div class="content_sidebar_2">
           <button type="button" class="btn border-0 btn_sidebar">
             <i class="fa-solid fa-gear"></i>
+            <span class="ms-3 d-none d-lg-inline">Admin</span>
           </button>
         </div>
       </nav>
 
-      <div class="flex-grow-1 main_right">right</div>
+      <div class="flex-grow-1 main_right">
+        <div class="container_main_1">
+          <div class="container_m1_p1">
+            <div class="col d-flex me-3 col_boolean">
+              <h2>Boolean</h2>
+              <button type="button" class="btn btn-sm btn_1 d-flex ms-3 mb-3">
+                Piano Blaze
+              </button>
+            </div>
+
+            <nav style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-decoration-none"
+                    ><div class="btn btn-sm btn_1 d-flex">3 App</div></a
+                  >
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  <a href="#" class="d-flex text-decoration-none"
+                    ><div class="btn btn-sm btn_1 d-flex ms-3 rounded-circle">
+                      +
+                    </div></a
+                  >
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col col_n_s justify-content-end mb-3">
+            Nuovo Studente
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-light btn_student ms-3"
+            >
+              +
+            </button>
+          </div>
+
+          <div class="col">
+            Studenti online negli ultimi 30 minuti
+            <h2>125</h2>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- bootstrap js -->
