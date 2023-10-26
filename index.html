@@ -144,11 +144,34 @@
           <div class="col col_n_s justify-content-end mb-3">
             Nuovo Studente
             <button
-              type="button"
               class="btn btn-sm btn-outline-light btn_student ms-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
             >
               +
             </button>
+
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                <button
+                  type="button"
+                  class="btn-close btn-sm btn-outline-light btn_student ms-3"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <h3>Inserisci un nuovo studente</h3>
+              </div>
+            </div>
           </div>
 
           <div class="col">
