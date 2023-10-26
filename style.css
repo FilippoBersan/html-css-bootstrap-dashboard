@@ -38,7 +38,7 @@ main {
   display: flex;
 
   gap: 0.625rem;
-  width: 20%;
+
   height: calc(100vh - 4.375rem);
   padding: 0.9375rem;
   justify-content: space-between;
@@ -77,4 +77,14 @@ main {
 
 .col_3 {
   background-color: rgb(0, 255, 17);
+}
+
+.main_right {
+  background-color: #e5e5e5;
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    width: 9.375rem;
+  }
 }
