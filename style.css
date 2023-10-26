@@ -25,6 +25,10 @@ header {
   background-color: rgb(255, 255, 255);
 }
 
+.header_breakpoint {
+  display: flex;
+}
+
 main {
   display: flex;
   height: calc(100vh - 4.375rem);
@@ -88,8 +92,10 @@ main {
 }
 
 .container_classi,
-.container_faq {
-  border: 1px solid red;
+.container_faq,
+.container_todo,
+.container_utentiattivi {
+  /* border: 1px solid red; */
   padding: 1.25rem;
   background-color: #ffffff;
 }
@@ -109,9 +115,21 @@ main {
   width: 1.875rem;
 }
 
+.border_utenti {
+  border: 1px solid gray;
+}
+
+.table_stats {
+  border: 1px solid gray;
+}
+
+#img_resize {
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   .sidebar {
-    width: 9.375rem;
+    width: 13.4375rem;
   }
   .container_main_1 {
     display: flex;
@@ -120,5 +138,30 @@ main {
   .col_n_s {
     display: flex;
     order: 1;
+  }
+
+  .container_main_2 {
+    display: flex;
+  }
+  .container_main_col1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .container_main_col2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .container_faq,
+  .container_utentiattivi {
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_breakpoint {
+    display: none;
   }
 }
