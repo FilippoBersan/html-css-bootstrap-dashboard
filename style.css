@@ -60,6 +60,12 @@ main {
 .main_right {
   background-color: #e5e5e5;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.container_main_right {
+  display: flex;
 }
 
 .container_main_1 {
@@ -79,6 +85,28 @@ main {
 }
 .btn_student {
   height: 1.875rem;
+}
+
+.container_classi,
+.container_faq {
+  border: 1px solid red;
+  padding: 1.25rem;
+  background-color: #ffffff;
+}
+
+.table_border {
+  border: 1px solid gray;
+}
+.header_table {
+  border: 1px solid gray;
+
+  background-color: #d5d5d5;
+  min-height: 3.125rem;
+  padding: 0.625rem;
+}
+.img_table {
+  height: 1.875rem;
+  width: 1.875rem;
 }
 
 @media (min-width: 992px) {
