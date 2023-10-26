@@ -5,7 +5,7 @@
 
 header {
   height: 4.375rem;
-  position: fixed;
+
   background-color: #f8f9fa;
   width: 100%;
 }
@@ -38,9 +38,8 @@ main {
   display: flex;
 
   gap: 0.625rem;
-  flex-shrink: 0;
-  width: 20vh;
-  height: 100vh;
+  width: 20%;
+  height: calc(100vh - 4.375rem);
   padding: 0.9375rem;
   justify-content: space-between;
 }
@@ -52,8 +51,6 @@ main {
 
   text-align: center;
   justify-content: end;
-  position: relative;
-  top: 6.25rem;
 }
 
 .btn_sidebar {
